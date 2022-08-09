@@ -4,16 +4,10 @@
 }
 
 body{
-    background:-webkit-linear-gradient(90deg, rgba(0, 0, 0, 1) 20%, rgba(153, 113, 110, 1) 100%, rgba(153, 113, 110, 1) 100%, rgba(153, 113, 110, 1) 100%);
-    display: grid;
+    background:-webkit-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 89%, rgba(93, 93, 37, 1) 100%);
     text-align: start;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-
-    column-gap: 15px;
-    row-gap: 15px;
-
-    width: 100%;
-    height: 1200px;
+    position: relative;
 }            
 
 header{
@@ -40,41 +34,62 @@ header{
     align-items: center;
 }
 
+nav{
+    display: flex;
+    background-color: grey;
+    transition: all;
+}
+nav ul{
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
 
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 30px 136px;
+    flex-direction: row;
+}
+nav ul li a:hover{
+    display: block;
+    background-color: lightgray;
+    color: white;
+    display: block;
+    border-radius: 5px;
+    transform: translate(5%);
+}
 
 section{
+    display: flex;
     color: white;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 10% 5% auto;
     text-align: left;
     flex-direction: column;
-    align-content: flex-start;
+    align-content: left;
+    padding: 20px;
+    margin: 20px;
 
 }
 
-footer{
-
+.imgn{
     display: flex;
-    text-align: center;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    flex-wrap: wrap;
+    align-items: left;
+    justify-content: left;
 }
 
-h1{
-    color: yellowgreen;
-    height: 60px;
-    text-align: center;
-    text-align: center;
-    margin: left;
-}
-
-h4{
-    height: 60px;
-    text-align: center;
-    text-align: center;
-    margin: left;
+#imagen{
+    padding: 10px;
+    border-radius: 30px;
+    height: 100%;
+    width: 100%;
 }
 
 #prod{
@@ -100,6 +115,62 @@ h4{
         width: 200px;
     }
 
+.divmarcas{
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#marca{
+    color: black;
+        display: flex;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 15px;
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        height: 200px;
+        width: 200px;
+}
+
+
+#inf{
+    padding: 20px;
+    height: 100px;
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+h1{
+    color: yellowgreen;
+    height: 100%;
+    text-align: center;
+    text-align: center;
+    margin: left;
+}
+
+h4{
+    height: 60px;
+    text-align: center;
+    text-align: center;
+    margin: left;
+}
+
+
+
 
 
 button {
@@ -118,15 +189,12 @@ button {
     margin: 5px;
 }
 
-body, section{
-    display: grid;
-}
-
 header,
 footer,
 section,
 nav {
     border-radius: 5px;
+
 }
 
 @media screen and (min-width: 320px){ 
@@ -151,34 +219,23 @@ section {
         }
     }
 
-    ul, li{
-        display: inline;
+    nav ul li a{
+        display: inline-block;
          }
 
 
 @media screen and (min-width: 790px){
-
     body{
-        column-gap: 15px;
-        row-gap: 15px;
-        grid-template-columns: 10% auto;
-        grid-template-rows: 10% auto 10%;
-        grid-template-areas:    'header header'
-                                'nav section'
-                                'footer footer';
-        
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 10% 10% auto 10%;
+        grid-template-areas: 'header' 'nav' 'section' 'footer';
+        column-gap: 10px;
+        row-gap: 10px;
     }
-section {
-    grid-template-columns: auto;
-    grid-template-rows: 10% auto;
-    text-align: left;
-    flex-direction: column;
-    align-content: flex-start;
-        }
-    
-        ul, li{
-            display: block;
-             }
-
+   
+    nav ul li a{
+        display: inline-block;
+    }
 }
 
