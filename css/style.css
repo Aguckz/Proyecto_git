@@ -92,6 +92,10 @@ section{
     width: 100%;
 }
 
+#imagen:hover{
+    transform: scale(1.1);
+}
+
 #prod{
     display: flex;
     padding: 20px;
