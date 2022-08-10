@@ -1,0 +1,181 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background:-webkit-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 89%, rgba(93, 93, 37, 1) 100%);
+    text-align: start;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    position: relative;
+}            
+
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;
+}
+
+section{
+    grid-area: section;
+}
+
+footer{
+    grid-area: footer;
+}
+
+header{
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar{
+    a{
+        color: white;
+        &:hover{
+            color: lightgreen;
+        }
+    }
+}
+
+section{
+    display: flex;
+    color: white;
+    text-align: left;
+    flex-direction: column;
+    align-content: left;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.imgn{
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    flex-wrap: wrap;
+    align-items: left;
+    justify-content: left;
+}
+
+#imagen{
+    padding: 10px;
+    border-radius: 30px;
+    height: 100%;
+    width: 100%;
+}
+
+#imagen:hover{
+    transform: scale(1.1);
+}
+
+#prod{
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.procesador{
+    color: black;
+        display: flex;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 15px;
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        height: 200px;
+        width: 200px;
+    }
+
+.divmarcas{
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0%;
+}
+
+#marca{
+    color: black;
+        display: flex;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 15px;
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        height: 200px;
+        width: 200px;
+}
+
+
+#inf{
+    padding: 20px;
+    height: 40vh;
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+}
+
+h1{
+    color: yellowgreen;
+    height: 100%;
+    text-align: center;
+    text-align: center;
+    margin: left;
+}
+
+h4{
+    height: 60px;
+    text-align: center;
+    text-align: center;
+    margin: left;
+}
+
+
+
+
+
+button {
+    text-decoration: none;
+    color: #006064;
+    border-radius: 5px;
+    background-color: white;
+    border: 2px solid black;
+    padding: 3px;
+}
+
+.botonredes {
+    font-size: large;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+}
+
+header,
+footer,
+section,
+nav {
+    border-radius: 5px;
+
+}
