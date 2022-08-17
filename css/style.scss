@@ -3,6 +3,8 @@
     padding: 0px;
 }
 
+$colorboton: #006064;
+
 body{
     background:-webkit-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 89%, rgba(93, 93, 37, 1) 100%);
     text-align: start;
@@ -34,16 +36,6 @@ header{
     align-items: center;
 }
 
-
-.navbar{
-    a{
-        color: white;
-        &:hover{
-            color: lightgreen;
-        }
-    }
-}
-
 section{
     display: flex;
     color: white;
@@ -62,17 +54,6 @@ section{
     flex-wrap: wrap;
     align-items: left;
     justify-content: left;
-}
-
-#imagen{
-    padding: 10px;
-    border-radius: 30px;
-    height: 100%;
-    width: 100%;
-}
-
-#imagen:hover{
-    transform: scale(1.1);
 }
 
 #prod{
@@ -124,7 +105,7 @@ section{
 
 #inf{
     padding: 20px;
-    height: 40vh;
+    height: 20vh;
 }
 
 footer{
@@ -158,7 +139,7 @@ h4{
 
 button {
     text-decoration: none;
-    color: #006064;
+    color: $colorboton;
     border-radius: 5px;
     background-color: white;
     border: 2px solid black;
@@ -179,3 +160,17 @@ nav {
     border-radius: 5px;
 
 }
+
+#imagen{
+    padding: 10px;
+    border-radius: 30px;
+    height: 100%;
+    width: 100%;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+@import "_nav.scss";
+
